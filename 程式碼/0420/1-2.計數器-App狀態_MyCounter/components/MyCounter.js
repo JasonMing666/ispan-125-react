@@ -1,7 +1,8 @@
+import React from 'react'
 import { useState } from 'react'
 
 function MyCounter(props) {
-  const { value , setCountBack} = props
+  const { value, setCountBack } = props
 
   const [count, setCount] = useState(0)
 
@@ -19,7 +20,7 @@ function MyCounter(props) {
       <button
         onClick={() => {
           setCount(count - value)
-          etCountBack(count - value)
+          setCountBack(count - value)
         }}
       >
         -{value}
