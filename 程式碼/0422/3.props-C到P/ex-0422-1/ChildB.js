@@ -8,6 +8,7 @@ function ChildB(props) {
       <h1>Child B</h1>
       <button
         onClick={() => {
+          // 觸發callback回送內部的狀態值
           props.setDataFromChildB(childBData)
         }}
       >

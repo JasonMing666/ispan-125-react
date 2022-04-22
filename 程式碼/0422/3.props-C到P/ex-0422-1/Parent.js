@@ -4,8 +4,10 @@ import ChildB from './ChildB'
 import { useState } from 'react'
 
 function Parent() {
+  // 傳給ChildA的狀態
   const [parentData, setParentData] = useState('parent data')
 
+  // 準備接收ChildB用的狀態
   const [dataFromChildB, setDataFromChildB] = useState('')
 
   return (
