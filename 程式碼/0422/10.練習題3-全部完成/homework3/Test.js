@@ -152,9 +152,10 @@ function Test() {
           // 方法1.用外部的函式庫nanoid產生id
           // const newObj = { id: nanoid(), text: 'xxx' }
 
-          // 方法2. 拉出所有的id值
+          // 方法2. 從所有的id值中找出最大值，然後遞增
+          // (註:只有id為數字才能這樣作)
           const ids = data.map((v) => v.id)
-          // 利用所有id裡數字最大值增加1來產生新的id值
+          // 找出id中的最大值增加 1 ，作為新的id值
           const newId = Math.max(...ids) + 1
           const newObj = { id: newId, text: 'xxx' }
 
