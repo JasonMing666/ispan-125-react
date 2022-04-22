@@ -27,14 +27,16 @@ function Test() {
       <h1>物件陣列的各種操作</h1>
       <p>呈現資料</p>
       <table border="1">
-        {data.map((v, i) => {
-          return (
-            <tr key={v.id}>
-              <td>{v.id}</td>
-              <td>{v.text}</td>
-            </tr>
-          )
-        })}
+        <tbody>
+          {data.map((v, i) => {
+            return (
+              <tr key={v.id}>
+                <td>{v.id}</td>
+                <td>{v.text}</td>
+              </tr>
+            )
+          })}
+        </tbody>
       </table>
       <hr />
       <button
