@@ -21,9 +21,13 @@ const products = [
   },
 ]
 
+// 產生初始的記錄購買數量的陣列
 // const initState = (array) => {
+// 用map的作法
 //   //return array.map((v) => 1)
+// 用fill的作法
 //   //return Array(array.length).fill(1)
+// 用for迴圈
 //   const state = []
 //   for (let i = 0; i < array.length; i++) {
 //     state.push(1)
