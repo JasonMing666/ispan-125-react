@@ -8,6 +8,10 @@ function Controlled() {
   const [gender, setGender] = useState('')
   const genderOptions = ['男', '女', '不提供']
 
+  // select
+  const [selectedValue, setSelectedValue] = useState('')
+  const carOptions = ['volvo', 'saab', 'mercedes', 'audi']
+
   return (
     <>
       <section id="input-text">
@@ -47,7 +51,28 @@ function Controlled() {
           )
         })}
       </section>
-
+      <section id="select">
+        <h2>下拉清單</h2>
+        <label htmlFor="cars">選擇你喜歡的車子品牌:</label>
+        <select
+          name="cars"
+          id="cars"
+          value={selectedValue}
+          onChange={(e) => {
+            setSelectedValue(e.target.value)
+          }}
+        >
+          <option value="">請選擇</option>
+          {carOptions.map((v, i) => {
+            return (
+              <option key={i} value={v}>
+                {/* 開頭轉為大寫英文 */}
+                {v.charAt(0).toUpperCase() + v.slice(1)}
+              </option>
+            )
+          })}
+        </select>
+      </section>
     </>
   )
 }
