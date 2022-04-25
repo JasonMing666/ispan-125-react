@@ -100,18 +100,19 @@ function Controlled() {
             // 先判斷是否有在陣列中
             const inState = likeList.includes(e.target.value)
 
-            // 如果有的話
+            // 如果有的話  從陣列中移除
             if (inState) {
-              // 從陣列中移除
+              // 步驟1+2
               const newLikeList = likeList.filter(
                 (v, i) => v !== e.target.value
               )
-
+              //  設定回狀態 步驟3
               setLikeList(newLikeList)
             } else {
               // 如果沒有就加入陣列
+              // 步驟1+2
               const newLikeList = [...likeList, e.target.value]
-
+              //  設定回狀態 步驟3
               setLikeList(newLikeList)
             }
           }}
