@@ -2,7 +2,7 @@ import './OrderPage.css'
 import OrderList from './components/OrderList'
 import Summary from './components/Summary'
 
-import { startTransition, useState } from 'react'
+import { useState } from 'react'
 
 const products = [
   {
@@ -18,6 +18,13 @@ const products = [
     categroy: 'Shirt',
     image: 'https://i.imgur.com/1GrakTl.jpg',
     price: 400,
+  },
+  {
+    id: 3,
+    name: '咖啡色 T-shirt',
+    categroy: 'Shirt',
+    image: 'https://i.imgur.com/1GrakTl.jpg',
+    price: 100,
   },
 ]
 
