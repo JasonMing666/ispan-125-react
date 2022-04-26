@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 
 const initState = () => {
-  console.log('相當於constructor')
+  console.log('初始化(類似constructor時初始工作)')
   return 0
 }
 
@@ -10,7 +10,7 @@ function FCLifecycle() {
 
   // 模擬componentDidMount
   useEffect(() => {
-    console.log('模擬componentDidMount')
+    console.log('模擬 componentDidMount')
   }, [])
 
   return (
