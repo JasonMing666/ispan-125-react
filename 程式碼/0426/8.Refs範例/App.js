@@ -6,8 +6,12 @@ function App() {
     <>
       <h1>Refs Form</h1>
       <RefsForm />
+      <br />
+      <RefsForm />
       <hr />
       <h1>Id Form</h1>
+      <IdForm />
+      <br />
       <IdForm />
     </>
   )
