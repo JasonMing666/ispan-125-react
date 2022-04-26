@@ -19,6 +19,8 @@ function HTML5Form() {
     birth: '',
   })
 
+  const fruitOptions = ['芒果', '西瓜', '芭樂']
+
   // 每個表單輸入時觸發onChange使用
   const handleChange = (e) => {
     // console.log(e.target.type, e.target.name, e.target.value)
@@ -34,6 +36,12 @@ function HTML5Form() {
   const handleSubmit = (e) => {
     // 阻擋表單預設行為
     e.preventDefault()
+
+    const formData = new FormData(e.target)
+    console.log(formData.get('username'))
+    console.log(formData.get('email'))
+    // 獲取同名稱的checkbox
+    console.log(formData.getAll('likeList'))
 
     // 作其它自訂驗証
     if (fields.password !== fields.confirmPassword) {
@@ -146,6 +154,17 @@ function HTML5Form() {
         {fieldErrors.birth !== '' && (
           <div className="error">{fieldErrors.birth}</div>
         )}
+
+        <div>
+          {fruitOptions.map((v, i) => {
+            return (
+              <div key={i}>
+                <input type="checkbox" value={v} name="likeList" />
+                <label>{v}</label>
+              </div>
+            )
+          })}
+        </div>
         <button type="submit">送出</button>
       </form>
     </>
