@@ -8,6 +8,7 @@ function HTML5Form() {
   const [email, setEmail] = useState('')
   const [birth, setBirth] = useState('')
 
+  // 表單通過html5驗証時會呼叫
   const handleSubmit = (e) => {
     // 阻擋表單預設行為
     e.preventDefault()
