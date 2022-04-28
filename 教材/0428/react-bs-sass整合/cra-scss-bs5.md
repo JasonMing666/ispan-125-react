@@ -65,7 +65,7 @@ npm install --save bootstrap
 // 這裡導入所有要預設變數覆蓋
 
 // 導入bootstrap所有的樣式與預設變數
-@import '~/bootstrap/scss/bootstrap';
+@import '~bootstrap/scss/bootstrap';
 
 // 其它要導入覆蓋掉原本的預設bootstrap樣式要放在這下面
 // 全站都會使用的共同樣式
@@ -83,21 +83,21 @@ body {
 
 ```scss
 // 1. 導入functions(要處理colors, SVGs, calc, 等等)
-@import '~/bootstrap/scss/functions';
+@import '~bootstrap/scss/functions';
 
 // 2. 這裡導入所有要預設變數覆蓋
 
 // 3. 導入必要的其它Bootstrap樣式
-@import '~/bootstrap/scss/variables';
-@import '~/bootstrap/scss/mixins';
+@import '~bootstrap/scss/variables';
+@import '~bootstrap/scss/mixins';
 
 // 4. 導入可選擇的Bootstrap元件樣式
-@import '~/bootstrap/scss/root';
-@import '~/bootstrap/scss/reboot';
-@import '~/bootstrap/scss/type';
-@import '~/bootstrap/scss/images';
-@import '~/bootstrap/scss/containers';
-@import '~/bootstrap/scss/grid';
+@import '~bootstrap/scss/root';
+@import '~bootstrap/scss/reboot';
+@import '~bootstrap/scss/type';
+@import '~bootstrap/scss/images';
+@import '~bootstrap/scss/containers';
+@import '~bootstrap/scss/grid';
 
 // 5. 加入額外的樣式在這裡
 ```
