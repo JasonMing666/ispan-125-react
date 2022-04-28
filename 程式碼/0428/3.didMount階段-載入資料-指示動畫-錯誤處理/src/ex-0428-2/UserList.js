@@ -26,12 +26,14 @@ function UserList(props) {
     }
   }
 
+  // 載入指示動畫
   const spinner = (
     <div className="spinner-border text-primary" role="status">
       <span className="visually-hidden">Loading...</span>
     </div>
   )
 
+  // 當有出現錯誤時呈現錯誤訊息
   const userListTable =
     error !== '' ? (
       error
@@ -56,7 +58,7 @@ function UserList(props) {
     // 向伺服器要求get資料
     fetchUser()
 
-    // 關起載入指示動畫
+    // 關起載入指示動畫(延後1.5秒關閉)
     setTimeout(() => {
       setIsLoading(false)
     }, 1500)
