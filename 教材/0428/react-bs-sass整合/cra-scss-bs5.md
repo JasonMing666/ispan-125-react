@@ -1,4 +1,4 @@
-# SASS/SCSS - CRA(create-react-app)+Bootstrap4 SCSS 搭配使用
+# SASS/SCSS - CRA(create-react-app)+Bootstrap5 SCSS 搭配使用
 
 ## 第一部份：CRA 加入 SASS(SCSS)導入支援
 
