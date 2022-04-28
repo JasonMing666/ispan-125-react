@@ -7,10 +7,15 @@
 安裝 sass:
 
 ```
-# using yarn
+# 使用 yarn
 yarn add sass
 
-# using npm
+```
+
+或
+
+```
+# 使用 npm
 npm install sass --save
 ```
 
@@ -28,7 +33,7 @@ import './index.scss'
 
 > 參考：https://create-react-app.dev/docs/adding-a-sass-stylesheet/
 
-## 第二部份：CRA 加入 Bootstrap4 SCSS 檔案與導入
+## 第二部份：CRA 加入 Bootstrap SCSS 檔案與導入
 
 ### 安裝 bootstrap 的 npm 模組(以 5.x 為主)
 
