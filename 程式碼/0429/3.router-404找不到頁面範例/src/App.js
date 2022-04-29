@@ -7,6 +7,7 @@ import User from './pages/User'
 import Product from './pages/Product'
 import ProductMen from './pages/ProductMen'
 import ProductWomen from './pages/ProductWomen'
+import NotFoundPage from './pages/NotFoundPage'
 
 function App() {
   return (
@@ -33,6 +34,9 @@ function App() {
         {/* TIP: 必要時要加exact，即要完全匹配path字串才會呈現該頁面元件 */}
         <Route path="/" exact>
           <Home />
+        </Route>
+        <Route path="*">
+          <NotFoundPage />
         </Route>
       </Switch>
     </Router>
