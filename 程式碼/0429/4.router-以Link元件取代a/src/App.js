@@ -12,10 +12,12 @@ import NotFoundPage from './pages/NotFoundPage'
 import Login from './pages/Login'
 
 function App() {
+  // 會員登入用的狀態 auth=true代表登入
   const [auth, setAuth] = useState(false)
 
   return (
     <Router>
+      {/* 以下是選單連結 */}
       <h1>使用a連結</h1>
       <a href="/login">登入</a>
       <br />
@@ -26,6 +28,7 @@ function App() {
       <br />
       <Link to="/user">會員頁</Link>
       <hr />
+      {/* 以下為路由對照表 */}
       <Switch>
         <Route path="/login">
           <Login setAuth={setAuth} auth={auth} />
