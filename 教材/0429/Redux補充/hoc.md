@@ -1,0 +1,3 @@
+- [Higher-order Components](https://gist.github.com/sebmarkbage/ef0bf1f338a7182b6775)
+- [Mixins Are Dead. Long Live Composition](https://medium.com/@dan_abramov/mixins-are-dead-long-live-higher-order-components-94a0d2f9e750#.z95ob1l7x)
+- [Higher-Order Components](https://zh-hant.reactjs.org/docs/higher-order-components.html)
