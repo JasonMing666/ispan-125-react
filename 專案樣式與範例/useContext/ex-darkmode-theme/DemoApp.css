@@ -1,0 +1,50 @@
+.header {
+  font-size: 34px;
+  font-weight: '400';
+}
+
+.app {
+  height: '100%';
+  width: '100%';
+  padding: 16px;
+}
+
+text {
+  font-weight: '200';
+}
+
+.light {
+  color: #03dac5;
+  background-color: #ffffff;
+}
+
+.light-highlight {
+  color: #fdb813;
+}
+
+.dark {
+  color: #bb86fc;
+  background-color: #121212;
+}
+
+.dark-highlight {
+  color: #ffffff;
+}
+
+.switch-light {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 35px;
+  padding-left: 10px;
+}
+
+.switch-dark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 35px;
+  padding-left: 30px;
+}
