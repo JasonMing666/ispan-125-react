@@ -18,6 +18,7 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
+        {/* TIP: 路徑長的要往上寫 */}
         <Route path="/product/men">
           <ProductMen />
         </Route>
@@ -27,6 +28,7 @@ function App() {
         <Route path="/product">
           <Product />
         </Route>
+        {/* TIP: 必要時要加exact，即要完全匹配path字串才會呈現該頁面元件 */}
         <Route path="/" exact>
           <Home />
         </Route>
